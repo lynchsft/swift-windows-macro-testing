@@ -14,9 +14,9 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            url: "https://github.com/SwiftyLab/MetaCodable.git",
-            from: "1.1.0"
-        )
+            url: "https://github.com/GottaGetSwifty/CodableWrappers.git",
+            from: "2.0.0"
+        ),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -24,7 +24,7 @@ let package = Package(
         .target(
             name: "SwiftWindowsPackageTesting",
         dependencies: [
-            .product(name: "MetaCodable", package: "MetaCodable")
+            .product(name: "CodableWrappers", package: "CodableWrappers")
         ]),
         .testTarget(
             name: "SwiftWindowsPackageTestingTests",

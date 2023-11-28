@@ -7,5 +7,11 @@
 
 import Foundation
 import SwiftWindowsPackageTesting
+import CodableWrappers
 
-enum EmptyEnum {}
+struct YourType: Codable {
+    @MillisecondsSince1970DateCoding
+    var millisecondsDate: Date
+    @Base64Coding
+    var someData: Data
+}

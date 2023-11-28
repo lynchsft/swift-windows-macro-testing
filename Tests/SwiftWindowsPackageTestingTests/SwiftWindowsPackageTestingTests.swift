@@ -3,7 +3,7 @@ import XCTest
 
 final class SwiftWindowsPackageTestingTests: XCTestCase {
     func testExample() throws {
-        print(EmptyEnum.self)
+        print(YourType.self)
         // XCTest Documentation
         // https://developer.apple.com/documentation/xctest
 

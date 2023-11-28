@@ -1,8 +1,9 @@
 import XCTest
-@testable import SwiftWindowsPackageTesting
+@testable import SwiftWindowsPackageTestingIntermediate
 
 final class SwiftWindowsPackageTestingTests: XCTestCase {
     func testExample() throws {
+        print(EmptyEnum.self)
         // XCTest Documentation
         // https://developer.apple.com/documentation/xctest
 

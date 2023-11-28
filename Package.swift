@@ -26,8 +26,13 @@ let package = Package(
         dependencies: [
             .product(name: "CodableWrappers", package: "CodableWrappers")
         ]),
+        .target(
+            name: "SwiftWindowsPackageTestingIntermediate",
+        dependencies: [
+            "SwiftWindowsPackageTesting"
+        ]),
         .testTarget(
             name: "SwiftWindowsPackageTestingTests",
-            dependencies: ["SwiftWindowsPackageTesting"]),
+            dependencies: ["SwiftWindowsPackageTestingIntermediate"]),
     ]
 )

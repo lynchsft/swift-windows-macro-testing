@@ -1,12 +1,21 @@
 {
   "pins" : [
     {
-      "identity" : "codablewrappers",
+      "identity" : "swift-power-assert",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/GottaGetSwifty/CodableWrappers.git",
+      "location" : "https://github.com/kishikawakatsumi/swift-power-assert.git",
       "state" : {
-        "revision" : "4eb46a4c656333e8514db8aad204445741de7d40",
-        "version" : "2.0.7"
+        "revision" : "2fa10dcbbff807fad73b4e2469b43300a50e9bbc",
+        "version" : "0.12.0"
+      }
+    },
+    {
+      "identity" : "swift-syntax",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-syntax.git",
+      "state" : {
+        "revision" : "6ad4ea24b01559dde0773e3d091f1b9e36175036",
+        "version" : "509.0.2"
       }
     }
   ],

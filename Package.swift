@@ -14,8 +14,8 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            url: "https://github.com/GottaGetSwifty/CodableWrappers.git",
-            from: "2.0.0"
+            url: "https://github.com/kishikawakatsumi/swift-power-assert.git",
+            from: "0.12.0"
         ),
     ],
     targets: [
@@ -23,16 +23,12 @@ let package = Package(
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
             name: "SwiftWindowsPackageTesting",
-        dependencies: [
-            .product(name: "CodableWrappers", package: "CodableWrappers")
-        ]),
-        .target(
-            name: "SwiftWindowsPackageTestingIntermediate",
-        dependencies: [
-            "SwiftWindowsPackageTesting"
-        ]),
+            dependencies: [
+                .product(name: "PowerAssert", package: "swift-power-assert"),
+            ]
+        ),
         .testTarget(
             name: "SwiftWindowsPackageTestingTests",
-            dependencies: ["SwiftWindowsPackageTestingIntermediate"]),
+            dependencies: ["SwiftWindowsPackageTesting"]),
     ]
 )
